@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="316.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.BandAboutUsController">
+
+   <userData>
+      <fx:reference source="controller" />
+   </userData>
+   <children>
+      <ImageView fitHeight="316.0" fitWidth="636.0" opacity="0.79" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/bgAboutUs.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="94.0" prefHeight="51.0" prefWidth="247.0" styleClass="knewave" stylesheets="@../../css/file/fontFile.css" text="Foundation date:">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" prefHeight="36.0" prefWidth="97.0" styleClass="knewave" stylesheets="@../../css/file/fontFile.css" text="Email:">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="54.0" prefHeight="42.0" prefWidth="226.0" styleClass="knewave" stylesheets="@../../css/file/fontFile.css" text="Telephone number:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="145.0" prefHeight="56.0" prefWidth="87.0" styleClass="knewave" stylesheets="@../../css/file/fontFile.css" text="City:">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="246.0" styleClass="knewave" stylesheets="@../../css/file/fontFile.css" text="Genre:">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="196.0" styleClass="knewave" stylesheets="@../../css/file/fontFile.css" text="Region:">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="-2.0" prefHeight="51.0" prefWidth="171.0" styleClass="knewave" stylesheets="@../../css/file/fontFile.css" text="Biography">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Text fx:id="textEmail" layoutX="110.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="317.61024475097656">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="textTelephone" layoutX="241.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="189.61036682128906">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="textFoundationDate" layoutX="244.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="183.21034240722656">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="textCity" layoutX="105.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="311.21034240722656">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="textRegion" layoutX="143.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="272.81031799316406">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="textGenre" layoutX="138.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="283.2104034423828">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="textAreaId" editable="false" layoutX="429.0" layoutY="57.0" prefHeight="259.0" prefWidth="199.0" wrapText="true" />
+   </children>
+</AnchorPane>

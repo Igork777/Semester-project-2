@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="300.0" maxWidth="400.0" minHeight="300.0" minWidth="400.0" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handIn_1.source_code.view.SettingsViewController">
+   <children>
+      <SplitPane dividerPositions="0.1788111217641419, 0.5" layoutX="14.0" layoutY="14.0" orientation="VERTICAL" prefHeight="300.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <AnchorPane minHeight="50.0" minWidth="400.0" prefHeight="50.0" prefWidth="400.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" prefHeight="30.0" prefWidth="75.0" text="Settings">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="seeTempBtn" layoutX="255.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClickChangeToTemperatures" prefHeight="30.0" prefWidth="130.0" text="Temperatures -&gt;" />
+               </children>
+            </AnchorPane>
+            <VBox alignment="TOP_CENTER" spacing="5.0">
+               <children>
+                  <Label text="Radiator">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefWidth="398.0" spacing="5.0">
+                     <children>
+                        <Button fx:id="radiatorPowerLevelDownButton" mnemonicParsing="false" onAction="#onRadPowerDownButton" prefHeight="37.0" prefWidth="50.0" text="-">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="radiatorPowerLevelTextField" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="84.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="radiatorPowerLevelUpButton" mnemonicParsing="false" onAction="#onRadPowerUpButton" prefHeight="39.0" prefWidth="50.0" text="+">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="radiatorTimerLabel" text="Timer if in state 3" textFill="RED">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" spacing="5.0">
+               <children>
+                  <Label text="Critical Points">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="3.0" prefWidth="389.0" spacing="5.0">
+                     <children>
+                        <Label text="High" />
+                        <TextField fx:id="highPointTextField" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="3.0" prefWidth="276.0" spacing="5.0">
+                     <children>
+                        <Label text="Low" />
+                        <TextField fx:id="lowPointTextField" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#onClickSave" text="Save" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

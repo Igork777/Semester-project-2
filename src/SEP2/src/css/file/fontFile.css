@@ -1,0 +1,29 @@
+@font-face {
+    src: url('Nightmare.ttf');
+}
+
+@font-face {
+    src: url('knewave.ttf');
+}
+
+.nightmare_font{
+  -fx-font-family: 'Nightmare Hero';
+}
+
+.register_form_bg {
+  -fx-background-color: #bfa301;
+  -fx-opacity: 0.3;
+}
+
+.list-view .scroll-bar:vertical
+{
+    -fx-scale-x: 0;
+}
+
+.knewave{
+    -fx-font-family: 'Knewave';
+}
+
+.profile_stripe {
+    -fx-background-color: #474038;
+}

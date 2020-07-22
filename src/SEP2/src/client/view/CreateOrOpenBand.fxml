@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.CreateOrOpenBandController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="-2.0" prefHeight="500.0" prefWidth="628.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="498.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/leftImage.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="createBandId" layoutX="48.0" layoutY="130.0" onMouseClicked="#onCreateBandClicked" onMouseEntered="#onCreateBandEntered" onMouseExited="#onCreateBandExited" styleClass="nightmare_font" stylesheets="@../../css/file/fontFile.css" text="Create band" textFill="WHITE">
+                     <font>
+                        <Font size="72.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="498.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/rightGuitar.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="myBandsId" layoutX="48.0" layoutY="132.0" onMouseClicked="#onMyBandsClicked" onMouseEntered="#onMyBandsEnter" onMouseExited="#onMyBandsExited" styleClass="nightmare_font" stylesheets="@../../css/file/fontFile.css" text="My bands" textFill="WHITE">
+                     <font>
+                        <Font size="72.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

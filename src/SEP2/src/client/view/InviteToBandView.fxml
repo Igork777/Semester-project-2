@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.InviteToBandViewController">
+   <children>
+      <Pane fx:id="paneIds" layoutY="31.0" prefHeight="471.0" prefWidth="527.0" />
+      <Button layoutX="551.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#onClickAdd" prefHeight="26.0" prefWidth="66.0" text="Add" />
+      <Label fx:id="resultAddingToTheBand" layoutX="6.0" layoutY="5.0" prefHeight="18.0" prefWidth="611.0" />
+   </children>
+</AnchorPane>

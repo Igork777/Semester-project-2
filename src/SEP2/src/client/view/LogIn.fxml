@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorId" prefHeight="500.0" prefWidth="800.0" stylesheets="@../../css/file/fontFile.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.LogInViewController">
+    <children>
+        <ImageView fitHeight="500.0" fitWidth="800.0" layoutX="0.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/guitarLeft.jpg" />
+            </image>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+        </ImageView>
+        <Pane layoutX="347.0" layoutY="167.0" opacity="0.44" prefHeight="208.0" prefWidth="442.0" style="-fx-background-color: #bfa301;">
+            <children>
+                <PasswordField fx:id="passwordTextField" focusTraversable="false" layoutX="142.0" layoutY="135.0" prefHeight="29.0" prefWidth="281.0" />
+                <Label layoutX="12.0" layoutY="2.0" prefHeight="29.0" prefWidth="117.0" styleClass="nightmare_font" text="Nickname">
+                    <font>
+                        <Font size="42.0" />
+                    </font>
+                </Label>
+                <Label layoutX="12.0" layoutY="104.0" prefHeight="75.0" prefWidth="117.0" styleClass="nightmare_font" stylesheets="@../../css/file/fontFile.css" text="Password">
+                    <font>
+                        <Font size="42.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nicknameTextField" layoutX="142.0" layoutY="42.0" prefHeight="29.0" prefWidth="281.0" />
+            </children>
+        </Pane>
+        <ImageView fitHeight="142.0" fitWidth="207.0" layoutX="568.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/rocker.gif" />
+            </image>
+        </ImageView>
+        <Label fx:id="logInIdBack" layoutX="581.0" layoutY="320.0" onMouseClicked="#onClickLogIn" onMouseEntered="#onMouseEnteredLogIn" onMouseExited="#onMouseExitedLogIn" prefHeight="154.0" prefWidth="218.0" styleClass="nightmare_font" stylesheets="@../../css/file/fontFile.css" text="Log In">
+            <font>
+                <Font size="90.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </Label>
+        <Label fx:id="backId" layoutX="211.0" onMouseClicked="#onClickBack" onMouseEntered="#onMouseEnteredBack" onMouseExited="#onMouseExitedBack" styleClass="nightmare_font" stylesheets="@../../css/file/fontFile.css" text="Back">
+            <font>
+                <Font size="96.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </Label>
+        <ImageView fitHeight="129.0" fitWidth="269.0" layoutX="348.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/cloud.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="TOP" layoutX="370.0" layoutY="19.0" prefHeight="77.0" prefWidth="184.0" styleClass="knewave" text="Hey stranger! Log in to start rockin'!" textAlignment="CENTER" textFill="#e80000d9" wrapText="true">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.UserProfileController">
+   <children>
+      <Pane prefHeight="187.0" prefWidth="628.0" style="-fx-background-color: #F7F7F7;">
+         <children>
+            <Pane layoutY="84.0" prefHeight="157.0" prefWidth="628.0" style="-fx-background-color: #696969;">
+               <children>
+                  <Label layoutX="266.0" layoutY="14.0" prefHeight="27.0" prefWidth="56.0" text="Name:" textFill="#fdfdfd">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nameId" layoutX="330.0" layoutY="14.0" prefHeight="27.0" prefWidth="290.0" textFill="#fdfdfd">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font></Label>
+                  <Label layoutX="281.0" layoutY="49.0" text="City:" textFill="#fdfdfd">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cityId" alignment="TOP_LEFT" layoutX="330.0" layoutY="49.0" prefHeight="27.0" prefWidth="290.0" textFill="#fdfdfd" wrapText="true">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font></Label>
+                  <Label layoutX="209.0" layoutY="86.0" text="Date of birth:" textFill="#fdfdfd">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dateOfBirthId" layoutX="330.0" layoutY="85.0" prefHeight="27.0" prefWidth="290.0" textFill="#fdfdfd">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label layoutX="261.0" layoutY="118.0" text="Region:" textFill="#fdfdfd">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="regionId" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="330.0" layoutY="118.0" prefHeight="27.0" prefWidth="290.0" textFill="#fdfdfd" wrapText="true">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font></Label>
+                  <ImageView fitHeight="187.0" fitWidth="248.0" layoutX="-27.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/unknownUser.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

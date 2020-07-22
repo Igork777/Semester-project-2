@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="50.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.InstrumentViewController">
+   <children>
+      <Label fx:id="instrumentLabel" layoutX="14.0" layoutY="14.0" prefHeight="22.0" prefWidth="164.0" text="Instrument">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="expertiseLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="152.0" layoutY="14.0" prefHeight="22.0" prefWidth="82.0" text="Expertise" textAlignment="RIGHT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="14.0" prefHeight="22.0" prefWidth="50.0" text=" year(s)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="301.0" layoutY="12.0" onMouseClicked="#deleteInstrument">
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="26.0">
+               <image>
+                  <Image url="@../../images/delete.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

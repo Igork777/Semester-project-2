@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.SearchViewController">
+   <children>
+      <ComboBox fx:id="searchFor" layoutX="249.0" layoutY="5.0" onAction="#onSearchForChanged" prefHeight="26.0" prefWidth="207.0" promptText="select" />
+      <Label layoutX="170.0" layoutY="7.0" text="Search for:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ScrollPane hbarPolicy="NEVER" layoutX="15.0" layoutY="35.0" maxHeight="454.0" prefHeight="455.0" prefWidth="598.0" vbarPolicy="NEVER">
+         <content>
+            <AnchorPane fx:id="criteriaPane" prefWidth="598.0" />
+         </content></ScrollPane>
+   </children>
+</AnchorPane>
