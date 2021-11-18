@@ -19,7 +19,6 @@ Project is created with:
 * SQLite
 ## Setup
 To run this project
-##
 
 1) Download Intelij Idea
 2) Install SDK 11 or higher
