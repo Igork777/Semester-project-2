@@ -3,6 +3,7 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Implemented functionality](#implemented-functionality)
+* [Link to the application presentation](#link-to-the-application-presentation)
 
 ## General info
 This project is social media for musicians written. 
@@ -18,6 +19,7 @@ Project is created with:
 * SQLite
 ## Setup
 To run this project
+##
 
 1) Download Intelij Idea
 2) Install SDK 11 or higher
@@ -66,5 +68,8 @@ can decide which bands I am involved in.
 to invite and remove a musician from the
 band, so that I can manage the members of the
 band.
+
+## Link to the presentation of the application
+https://www.youtube.com/watch?v=3cP7NJT1_Jc 
 
 
