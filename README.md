@@ -14,6 +14,7 @@ Project is created with:
 * JavaFX
 * JUnit
 * RMI
+* SQLite
 ## Setup
 To run this project
 
